@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8 - Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+        <style>
+            .box {
+                width: 50%;
+                height: 120px;
+                background: rgb(190, 9, 9)
+            } 
+            .box::after {
+                content: attr(data-title);
+            }
+            a {
+                font-size: 24px;
+            }
+            a::after {
+               /* content: "("attr(href)")"; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box" data-title="Học lập trình"></div>
+        <a href="https://fullstack.edu.vn/learning/html-css?id=2160">Học CSS Functios</a>
+        <div>
+            <h1>CSS Variable</h1>
+            <h2>H2</h2>
+            <h3>text</h3>
+        </div>
+        <div>
+            <h1>Priority?</h1>
+            <ul>
+                <li>Internal. External</li>
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <li>Equal specificity?</li>/
+                <li>Universal selector and inherited?</li>
+            </ul>
+        </div>
+        <div>
+            <h1 style="color: blue;font-size: 20px;">CSS in HTML</h1>
+            <ol>
+                <li>Internal</li>
+                <li>Ecxternal</li>
+                <li>Inline</li>
+            </ol>
+        </div>
+        <div id = "main">
+            <div class ="header">
+            </div>
+            <div class= "nav">
+            </div>
+            <div class= "container">
+                <h1 class ="heading"> Tôi đang đều đặn học lập trình mỗi ngày </h1>
+            </div>
+            <div class = "footer">
+            </div>
+        </div>
+        <div>
+            <button>Đăng ký</button>
+            <button>Đăng nhập</button>
+        </div>
+        <input type="text">
+        <a href="https://fullstack.edu.vn/">Học lập trình F8 - Fullstack</a>
+        <Div>
+            Tên đăng nhập:<br>
+            <input type="text" name="Tên đăng nhập"><br> Mật khẩu:
+            <Br>
+            <input type="password" name="Mật khẩu">
+        </Div>
+        <DIv>
+            <Input name="gender" type="radio"> nam.
+            <br>
+            <input name="gender" type="radio"> Nữ.
+            <br>
+        </Div>
+        <div>
+            <Input type="checkbox" name="answer"> Đáp án 1.</br>
+            <Input type="checkbox" name="answer"> Đáp án 2.</br>
+            <Input type="checkbox" name="answer"> Đáp án 3.</br>
+            <Input type="checkbox" name="answer"> Đáp án 4.</br>
+        </div>
+        <div>
+            <input type="submit" value="Đăng ký">
+        </div>
+        <div>
+            <h1 id="F">cách sử dụng id</h1>
+            <h1 id="B">cách sử dụng id</h1>
+            <h1 class="M">cách sử dụng id</h1>
+            <h1 class="M">cách sử dụng id</h1>
+        </div>
+        <!-- <style>
+            .parent .children {
+                color: red;
+            }
+        </style> -->
+        
+        <!-- Trường hợp .children là con trực tiếp của .parent -->
+        <div class="parent">
+            <div class="children">Children 1</div>
+            <div class="children">Children 2</div>
+            <div class="children">Children 3</div>
+        </div>
+        
+        <!-- Hoặc các .children nằm rải rác, miễn là con của .parent -->
+        <div class="parent">
+            <div class="children">Children 1</div>
+        
+            <div class="other-div">
+                <div class="children">Children 2</div>
+                
+                <div class="other-div">
+                    <div class="children">Children 3</div>
+                </div>
+            </div>
+        </div>
+        <p>
+			<a href="https://freetuts.net/vung-chon-trong-css-css-combinators-1626.html" target="_blank">Đây là link được áp dụng pseudo-calss</a>
+		</p>
+        <a href="https://freetuts.net/editor.html?id=1455">Trình test code</a>
+    </body>
+</html>

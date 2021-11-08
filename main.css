@@ -1,0 +1,13 @@
+:root {
+    --H-color: orange;
+}
+h1 {
+    color: var(--H-color);
+}
+h2 {
+    --C-color: violet;
+    color: var(--C-color);
+}
+h3 {
+    color: var(--C-color);
+}
